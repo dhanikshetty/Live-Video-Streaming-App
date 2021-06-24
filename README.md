@@ -35,11 +35,12 @@ Use streaming software such as [OBS](https://obsproject.com/welcome). Configure 
 - Node-Media-Server
 
 ## Information/Data Flow
-1. Streamer’s Computer  records video with  Open Broadcaster Software (OBS) →
+1. user requests login → googleauthentication →loggged in
+2. Streamer’s Computer  records video with  Open Broadcaster Software (OBS) →
     - Video stream + stream key →
-2. API - Real Time Messaging Protocol (RTMP) Server →
+3. API - Real Time Messaging Protocol (RTMP) Server →
     - Separate Web Server that knows which streams are currently broadcasting → 
-3. Broadcast Video Feed → Multiple Viewers’ Browser →
-4. Viewers request to get video from RTMP → viewer…
+4. Broadcast Video Feed → Multiple Viewers’ Browser →
+5. Viewers request to get video from RTMP → viewer…
 
 
